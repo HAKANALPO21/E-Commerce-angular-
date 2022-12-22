@@ -1,0 +1,25 @@
+ 
+ <div class="mb-3">
+ <label for="filterText" class="form-label"></label>
+ <input type="text" [(ngModel)]="filterText"class="form-control" id="filterText" placeholder="arama ifadesi giriniz">
+</div>
+    <div *ngIf="filterText.length>1" class="alert alert-info" >{{filterText}} </div>
+ <div class="row">
+
+
+    <div class="row"  *ngFor="let product of products |filterPipe:filterText" class="card" style="width: 18rem;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMaa24iNK0vbJyQ_9mLyBFJHeb2bNk2FLH-ttkP5XWN0MBAn6SnB6H1H4U1co2sW--50A&usqp=CAU" class="card-img-top" alt="laptop">
+        <div   class="card-body">
+          <h5 class="card-title">{{product.productName }}</h5>
+          <h5 class="card-title">{{product.unitPrice }}</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <button (click)="addToCart(product)" type="button" class="btn btn-primary">sepete ekle</button>
+        </div>
+      </div>
+    
+ </div>
+   
+        
+          
+
+

@@ -1,0 +1,36 @@
+.uk-containeruk-padding  {
+  background: #004a9f;
+  color: black;
+  margin: 16px;
+  width: 200px;
+}
+
+.uk-marginuk-flexuk-grid-small {
+  margin: 16px;
+  width: 100px;
+  border-right: none;
+  background: #002b5c;
+  color: black;
+  border-radius: 10px;
+  padding: 16px;
+  text-align: center;
+}
+
+.sidebar-wrapper {
+  height: calc(100vh - 98px);
+  border-radius: 10px;
+  margin: 16px;
+  margin-left: 32px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 2rem;
+  color: lightgray;
+}
+
+.list-group {
+  height: calc(100vh - 65px);
+  color: blue;
+}
